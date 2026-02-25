@@ -1,0 +1,149 @@
+/* BODY & GENERAL */
+body {
+    background: linear-gradient(120deg, #f1f0f6, #e1e2e6, #e6e9ed);
+    font-family: 'Roboto', sans-serif;
+    padding-bottom: 80px; 
+    min-height: 100vh;
+}
+
+/* NAVBAR */
+.navbar-grad {
+    background: linear-gradient(135deg, #ab74fd, #944efe, #7c3aed);
+}
+
+.brand-text {
+    font-family: "Orbitron", sans-serif;
+    font-weight: 700;
+    letter-spacing: 0.8px;
+    color: #fff;
+    font-size: 1.1rem;
+}
+
+/* HEADER CARD */
+.hdr-card {
+    box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+    border: none;
+    background-color: #fff;
+    overflow: hidden;
+}
+
+.hdr-line {
+    height: 6px;
+    background: linear-gradient(90deg, #d75fea, #9161e5);
+}
+
+.hdr-title {
+    font-family: 'Courier New', monospace;
+    font-size: 18px;
+    font-weight: 800;
+    margin: 0;
+}
+
+.hdr-sub {
+    font-size: 14px;
+    color: #555;
+}
+
+.hdr-badge {
+    background: linear-gradient(135deg, #fba2fe, #a068ff);
+    color: white;
+    font-weight: bold;
+    font-size: 13px;
+    box-shadow: 0 4px 10px rgba(13, 110, 253, 0.3);
+}
+
+/* JADWAL WRAP & TABS */
+.jadwal-wrap {
+    background: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(10px);
+}
+
+.jadwal-tabs .nav-link {
+    color: #9f46f8;
+    font-weight: 700;
+    transition: 0.3s;
+    border: 1px solid transparent;
+}
+
+.jadwal-tabs .nav-link.active {
+    background: #bb54ff !important;
+    color: #fff !important;
+    box-shadow: 0 4px 12px rgba(13, 110, 253, 0.2);
+}
+
+/* TABLE STYLES */
+.jadwal-panel {
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+.jadwal-table th {
+    background-color: #f8f9fa;
+    color: #333;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+.tt {
+    white-space: nowrap;
+}
+
+/* GURU SECTION */
+    .guru-img {
+    width: 100px;           /* Lebar standar */
+    height: 100px;          /* Tinggi standar (sama dengan lebar agar bulat/kotak sempurna) */
+    object-fit: cover;      /* KUNCI: Agar foto otomatis terpotong rapi & tidak GEPREK/LONJONG */
+    object-position: center; /* Foto akan selalu fokus di tengah */
+    border-radius: 50%;     /* Opsional: Buat foto jadi bulat (hapus jika ingin kotak) */
+    border: 3px solid #f8f9fa; /* Frame tipis agar lebih elegan */
+}
+
+
+.guru-name {
+    background: #e7f1ff;
+    color: #5ba9f8;
+    font-weight: 700;
+    font-size: 14px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+/* FOOTER */
+.footer-win {
+    background: linear-gradient(135deg, #ab74fd, #944efe, #7c3aed);
+    height: 56px;
+    box-shadow: 0 -4px 15px rgba(0,0,0,0.1);
+}
+
+.footer-text {
+    color: #fff;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.footer-right {
+    color: rgba(255,255,255,0.8);
+    font-size: 13px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 576px) {
+    .hdr-flex {
+        flex-direction: column;
+        align-items: flex-start !important;
+        gap: 10px;
+    }
+    
+    .jadwal-tabs {
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        padding-bottom: 10px;
+        justify-content: flex-start;
+    }
+    
+    .jadwal-tabs .nav-link {
+        font-size: 11px;
+        padding: 8px 10px;
+        white-space: nowrap;
+    }
+}
